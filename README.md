@@ -1,25 +1,28 @@
-# PAKSTAR SARL WEBSITE
+# 🏍️ Pakstar - Motorcycle Web Application
 
-Welcome to the official repository for the **PAKSTAR SARL** website. This project is a multi-page web application featuring company information, dealer enrollment, contact details, and product inquiries.
+A responsive multi-page web application built for motorcycles, featuring custom navigation headers, specialized hero sections, and clean modern design layout.
 
-## 🌐 Live Demo
+## 🔗 Live Demo
+Check out the live website here: [Pakstar Live Preview](https://khanrajput2009-commits.github.io/PAKSTAR-SARL-WEBSITE/)
 
-You can view the live site deployed on GitHub Pages here:  
-👉 **[PAKSTAR SARL Live Website](https://khanrajput2009-commits.github.io/PAKSTAR-SARL-WEBSITE)**
+## 📂 Project Structure
+- `index.html` - Homepage with hero section and overview.
+- `about.html` - Information about the organization and brand story.
+- `dealers.html` - Authorized dealers and locations directory.
+- `become-a-dealer.html` - Application form/page for prospective dealers.
+- `contact.html` - Contact details and inquiry form.
+- `css/` - Stylesheets for responsive styling.
+- `js/` - JavaScript files for interactive elements and navigation.
+- `assets/` - Images, logos, and media resources.
 
----
+## 🛠️ Technologies Used
+- **HTML5**
+- **CSS3 / Bootstrap**
+- **JavaScript**
+- **GitHub Pages** (for deployment)
 
-## 📁 Repository Structure
-
-```text
-PAKSTAR-SARL-WEBSITE/
-│
-├── assets/             # Static media assets (images, logos, icons)
-├── css/                # Cascading Style Sheets (styling files)
-├── js/                 # JavaScript files (interactivity & logic)
-│
-├── README.md           # Documentation for the repository
-├── about.html          # About Us section / company profile
-├── become-a-dealer.html # Dealer registration and inquiry page
-├── contact.html        # Contact details & contact form
-└── dealers.html        # List of authorized dealers & partners
+## 🚀 Getting Started Locally
+To run this project on your local machine:
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/khanrajput2009-commits/PAKSTAR-SARL-WEBSITE.git](https://github.com/khanrajput2009-commits/PAKSTAR-SARL-WEBSITE.git)
