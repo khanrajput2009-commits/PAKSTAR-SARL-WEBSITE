@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="title.dealer">Become a Dealer — PAKSTAR SARL</title>
+<meta name="description" content="Business inquiry for potential PAKSTAR SARL dealers and distributors.">
+<meta name="theme-color" content="#070a10">
+<script>(function(){function g(k){try{var v=localStorage.getItem('pk.'+k);if(v!==null)return JSON.parse(v)}catch(e){}try{if(String(window.name).indexOf('PKS:')===0){var o=JSON.parse(window.name.slice(4));if(k in o)return o[k]}}catch(e){}try{var m=document.cookie.match(new RegExp('(?:^|; )pk_'+k+'=([^;]*)'));if(m)return JSON.parse(decodeURIComponent(m[1]))}catch(e){}return null}try{var t=g('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t);var l=g('lang');if(l){document.documentElement.lang=l}}catch(e){}})();</script>
+<link rel="icon" href="assets/images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/images/brand/icon-192.png"><link rel="apple-touch-icon" href="assets/images/brand/icon-180.png"><meta property="og:image" content="assets/images/brand/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/premium.css">
+<noscript><style>.preloader{display:none}.hero-title .ln>span{transform:none!important}.reveal,.reveal-h{opacity:1!important;transform:none!important;clip-path:none!important}.m-nav{display:none}</style></noscript>
+</head>
+<body data-page="dealer">
+<div class="preloader" id="preloader" aria-hidden="true"><div class="pre-in"><img class="pre-logo" src="assets/images/brand/logo-800.png" width="800" height="518" alt=""><div class="pre-bar"><i></i></div><p class="pre-tag">RIDE BEYOND LIMITS</p></div></div>
+<header id="siteHeader"></header>
+<main id="main">
+<section class="page-hero">
+  <div class="ph-video" aria-hidden="true"><video muted loop playsinline preload="metadata"  poster="assets/video/business-fleet-poster.jpg" data-src="assets/video/business-fleet.mp4"></video></div>
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="index.html" data-i18n="nav.home">Home</a></li><li aria-current="page" data-i18n="dl.crumb">Become a dealer</li></ol>
+    <h1 data-i18n="dl.title">Become a Dealer</h1>
+    <p class="lead" data-i18n="dl.lead">Interested in representing PAKSTAR SARL? Send a short business inquiry. No approval is promised until reviewed by the company.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container split" style="align-items:start">
+    <div class="panel reveal from-left"><form class="form" data-form="dealer" novalidate aria-label="Become a dealer">
+  <div class="notice" style="margin-bottom:1.4rem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span data-i18n="form.notice">This is a front-end demonstration: the form is validated here, but nothing is transmitted until an email service or backend is connected.</span></div>
+  <div class="row"><div class="field"><label for="company"><span data-i18n="f.company">Applicant or company name</span> <em aria-hidden="true">*</em></label><input class="input" id="company" name="company" type="text" required autocomplete="organization" ><p class="err"></p></div><div class="field"><label for="email"><span data-i18n="f.bemail">Business email</span> <em aria-hidden="true">*</em></label><input class="input" id="email" name="email" type="email" required autocomplete="email" ><p class="err"></p></div></div>
+  <div class="row"><div class="field"><label for="phone"><span data-i18n="f.phone.req">Contact number</span> <em aria-hidden="true">*</em></label><input class="input" id="phone" name="phone" type="tel" required autocomplete="tel" data-type="phone"><p class="err"></p></div><div class="field"><label for="country"><span data-i18n="f.country">Country or region</span> <em aria-hidden="true">*</em></label><select class="input" id="country" name="country" required autocomplete="country" ><option value="" data-i18n="f.choose">Choose…</option><option value="DJ" data-i18n="c.dj">Djibouti</option><option value="ET" data-i18n="c.et">Ethiopia</option><option value="ER" data-i18n="c.er">Eritrea</option><option value="SO" data-i18n="c.so">Somalia / Somaliland</option><option value="KE" data-i18n="c.ke">Kenya</option><option value="OT" data-i18n="c.ot">Other</option></select><p class="err"></p></div></div>
+  <div class="field"><label for="btype"><span data-i18n="f.btype">Business type</span> <em aria-hidden="true">*</em></label><select class="input" id="btype" name="btype" required ><option value="" data-i18n="f.choose">Choose…</option><option value="retail" data-i18n="bt.retail">Motorcycle retailer</option><option value="distributor" data-i18n="bt.distributor">Distributor / importer</option><option value="workshop" data-i18n="bt.workshop">Workshop / service centre</option><option value="fleet" data-i18n="bt.fleet">Fleet or rental operator</option><option value="other" data-i18n="bt.other">Other</option></select><p class="err"></p></div>
+  <div class="field"><label for="message"><span data-i18n="f.partner">Brief description of the proposed partnership</span> <em aria-hidden="true">*</em></label><textarea class="input" id="message" name="message" required minlength="20"></textarea><p class="err"></p></div>
+  <div class="field"><label class="check" for="consent"><input type="checkbox" id="consent" name="consent" required><span data-i18n="f.consent">I agree that PAKSTAR SARL may contact me about this request. I understand no unnecessary personal data is collected.</span></label><p class="err"></p></div>
+  <div><button type="submit" class="btn"><span data-i18n="btn.senddealer">Send application</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+</form>
+<div class="form-ok" id="formOk" role="status">
+  <div class="big"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+  <h2 data-i18n="ok.title">Thank you!</h2>
+  <p data-i18n="ok.text">Your details look good and the form is complete.</p>
+  <p class="notice ok-demo" style="text-align:left;margin:1.2rem 0"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span data-i18n="ok.demo">Demonstration only: no message was actually sent. Real delivery requires an email service or backend to be connected.</span></p>
+  <button type="button" class="btn ghost" id="again"><span data-i18n="btn.again">Send another request</span></button>
+</div></div>
+    <div class="reveal from-right"><h3 data-i18n="dl.why">Before you apply</h3><ul class="checklist"><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="dl.b1">Tell us about your business and the area you serve</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="dl.b2">Share what you would bring to the partnership</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="dl.b3">We only ask for information relevant to this inquiry</span></li></ul><div class="notice"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span data-i18n="dl.disc">A formal dealer programme has not been announced. This form only starts a conversation.</span></div><div class="frame" style="margin-top:1.6rem"><div data-photo="showroom" data-alt="PAKSTAR showroom"></div></div></div>
+  </div>
+</section>
+
+</main>
+<footer id="siteFooter"></footer>
+<script src="js/storage.js"></script>
+<script src="js/art.js"></script>
+<script src="js/content.js"></script>
+<script src="js/media.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

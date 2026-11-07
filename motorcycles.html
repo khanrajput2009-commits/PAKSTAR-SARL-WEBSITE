@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="title.motos">Motorcycles — PAKSTAR SARL</title>
+<meta name="description" content="Browse the PAKSTAR SARL sample motorcycle collection: commuter, sport, adventure, cruiser, scooter, electric and commercial three-wheelers.">
+<meta name="theme-color" content="#070a10">
+<script>(function(){function g(k){try{var v=localStorage.getItem('pk.'+k);if(v!==null)return JSON.parse(v)}catch(e){}try{if(String(window.name).indexOf('PKS:')===0){var o=JSON.parse(window.name.slice(4));if(k in o)return o[k]}}catch(e){}try{var m=document.cookie.match(new RegExp('(?:^|; )pk_'+k+'=([^;]*)'));if(m)return JSON.parse(decodeURIComponent(m[1]))}catch(e){}return null}try{var t=g('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t);var l=g('lang');if(l){document.documentElement.lang=l}}catch(e){}})();</script>
+<link rel="icon" href="assets/images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/images/brand/icon-192.png"><link rel="apple-touch-icon" href="assets/images/brand/icon-180.png"><meta property="og:image" content="assets/images/brand/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/premium.css">
+<noscript><style>.preloader{display:none}.hero-title .ln>span{transform:none!important}.reveal,.reveal-h{opacity:1!important;transform:none!important;clip-path:none!important}.m-nav{display:none}</style></noscript>
+</head>
+<body data-page="motorcycles" class="has-bgvideo">
+<div class="preloader" id="preloader" aria-hidden="true"><div class="pre-in"><img class="pre-logo" src="assets/images/brand/logo-800.png" width="800" height="518" alt=""><div class="pre-bar"><i></i></div><p class="pre-tag">RIDE BEYOND LIMITS</p></div></div>
+<div class="bgvideo" aria-hidden="true"><video muted loop playsinline preload="metadata" data-fixed autoplay poster="assets/video/showroom-bikes-poster.jpg" data-src="assets/video/showroom-bikes.mp4"></video></div>
+<header id="siteHeader"></header>
+<main id="main">
+<section class="page-hero">
+    <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="index.html" data-i18n="nav.home">Home</a></li><li aria-current="page" data-i18n="nav.motorcycles">Motorcycles</li></ol>
+    <h1 data-i18n="moto.title">The Collection</h1>
+    <p class="lead" data-i18n="moto.lead">Filter by category, search by name and compare up to three models. Open any card for a quick view.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="notice" style="margin-bottom:1.6rem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span data-i18n="sample.note">Sample catalogue entry. Illustration and class-level specifications are indicative only; final details to be confirmed by PAKSTAR SARL.</span></div>
+    <div class="filters" id="filters">
+      <div><span class="lbl" id="lblCat" data-i18n="f.cat">Category</span><div class="chips" id="catChips" role="group" aria-labelledby="lblCat" style="margin-top:.7rem"></div></div>
+      <div class="frow">
+        <div class="field"><label for="fq" data-i18n="f.search">Search</label><input class="input" id="fq" type="search" autocomplete="off" data-i18n-attr="placeholder:f.search.ph" placeholder="Model or keyword"></div>
+        <div class="field"><label for="ft" data-i18n="f.trans">Transmission</label><select class="input" id="ft"><option value="all" data-i18n="f.all">All</option><option value="manual" data-i18n="trans.manual">Manual</option><option value="auto" data-i18n="trans.auto">Automatic</option><option value="electric" data-i18n="trans.electric">Electric drive</option></select></div>
+        <div class="field"><label for="fs" data-i18n="f.sort">Sort by</label><select class="input" id="fs"><option value="name" data-i18n="f.sort.name">Name A–Z</option><option value="cat" data-i18n="f.sort.cat">Category</option></select></div>
+        <button type="button" class="btn ghost" id="fReset"><span data-i18n="f.reset">Reset filters</span></button>
+      </div>
+    </div>
+    <p id="count" aria-live="polite" style="color:var(--muted);font-weight:700"></p>
+    <div class="grid g3" id="catalogGrid"></div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="gal.eyebrow">Gallery</span><h2 data-i18n="gal.title">Studio, desert and city lights</h2><p class="lead" data-i18n="gal.lead">A first look at the visual language. Click any image to open the viewer; use arrow keys or swipe to browse.</p></div>
+    <div class="gallery" data-render="gallery"></div>
+  </div>
+</section>
+<section class="section"><div class="container"><div class="cta-band reveal zoom">
+  <div class="art" aria-hidden="true"><div data-photo="adventure"></div></div>
+  <span class="eyebrow" style="color:#ffb457" data-i18n="cta.eyebrow">Let’s talk</span>
+  <h2 data-i18n="cta.title">Ready to find your ride?</h2>
+  <p data-i18n="cta.lead">Tell us what you need and we will come back with verified availability and a clear quote in Djiboutian Franc.</p>
+  <div class="btn-row" style="margin-top:1.6rem"><a class="btn" href="inquiry.html"><span data-i18n="btn.inquire">Request information</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn light" href="become-a-dealer.html"><span data-i18n="btn.dealer">Become a dealer</span></a></div>
+</div></div></section>
+
+</main>
+<footer id="siteFooter"></footer>
+<script src="js/storage.js"></script>
+<script src="js/art.js"></script>
+<script src="js/content.js"></script>
+<script src="js/media.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

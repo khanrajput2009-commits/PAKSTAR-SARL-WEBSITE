@@ -1,0 +1,85 @@
+/* ==========================================================================
+   PAKSTAR SARL — Responsive rules (composed per breakpoint, not just shrunk)
+   ========================================================================== */
+@media (min-width: 1600px) {
+  .container { width: min(1440px, 100% - 4rem); }
+  html { font-size: 17px; }
+}
+@media (max-width: 1180px) {
+  .nav > a, .dd > .dd-btn { padding: .6rem .6rem; font-size: .78rem; }
+  .site-header .btn.cta { display: none; }
+  .g4 { grid-template-columns: repeat(2, 1fr); }
+  .tip-grid { grid-template-columns: repeat(3, 1fr); }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 980px) {
+  :root { --h: 68px; }
+  .nav { display: none; }
+  .burger { display: inline-block; }
+  .m-nav { display: block; }
+  .nav-tools .lang-dd .dd-label { display: none; }
+  .hero { padding-bottom: 6rem; }
+  .hero-grid { grid-template-columns: 1fr; text-align: left; }
+  .hero-stage { order: -1; min-height: 0; margin-top: .5rem; }
+  .stage-bike { max-width: 560px; margin-inline: auto; }
+  .chip { display: none; }
+  .hero-switch { position: static; transform: none; margin: .6rem auto 0; width: max-content; max-width: 100%; }
+  .scroll-hint { display: none; }
+  .g3 { grid-template-columns: repeat(2, 1fr); }
+  .split, .pd, .map-shell { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: 0; } .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; }
+  .g-item:nth-child(6) { grid-column: span 1; }
+  .modal { grid-template-columns: 1fr; overflow-y: auto; max-height: 92svh; }
+  .m-body { max-height: none; overflow: visible; }
+  .m-media { min-height: 0; } .m-media .m-view { min-height: 0; aspect-ratio: 16 / 10; flex: none; }
+  .frow { grid-template-columns: 1fr 1fr; }
+  .map-box, .map-svg { min-height: 380px; }
+  .page-hero .ph-art { opacity: .25; }
+}
+@media (max-width: 640px) {
+  .container { width: calc(100% - 2rem); }
+  .section { padding: 3.6rem 0; }
+  h3 { font-size: 1.35rem; }
+  .g2, .g3, .g4 { grid-template-columns: 1fr; }
+  .form .row, .frow { grid-template-columns: 1fr; }
+  .tip-grid { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-meta { gap: 1.4rem; } .hero-meta b { font-size: 1.6rem; }
+  .hero-cta .btn { flex: 1 1 100%; }
+  .btn { padding: .95rem 1.3rem; min-height: 48px; }
+  .stat { padding: 1.6rem 1rem; } .stat b { font-size: 2.4rem; }
+  .logo { font-size: 1.4rem; } .logo-mark { width: 34px; height: 34px; }
+  .tool-btn { height: 40px; min-width: 40px; padding: 0 .6rem; }
+  .nav-tools { gap: .4rem; }
+  .gallery { grid-auto-rows: 140px; gap: .6rem; }
+  .overlay { padding: 0; align-items: end; }
+  .modal { border-radius: 22px 22px 0 0; max-height: 94svh; width: 100%; }
+  .modal.narrow { width: 100%; }
+  .compare-bar { border-radius: 18px; flex-wrap: wrap; justify-content: center; text-align: center; width: calc(100vw - 1.4rem); }
+  .lb-nav { width: 42px; height: 42px; }
+  .map-tabs { right: .9rem; justify-content: center; }
+  .cta-band .art { opacity: .25; width: 90%; }
+  .cmp-table th { width: 88px; }
+  .toasts { left: 1rem; right: 1rem; } .toast { max-width: none; }
+  .foot-bottom { flex-direction: column; }
+}
+@media (max-width: 380px) {
+  .logo small { display: none; }
+  .tip-grid { grid-template-columns: 1fr; }
+}
+@media (hover: none) {
+  .card:hover { box-shadow: none; transform: none !important; }
+  .card:active { transform: scale(.985) !important; border-color: var(--brand); }
+  .btn:hover::before { transform: translateY(101%); } .btn:hover { color: var(--brand-ink); }
+  .btn.ghost:hover { color: var(--ink); } .btn.light:hover { color: #fff; }
+  .g-item figcaption { transform: none; }
+}
+@media (max-height: 560px) and (orientation: landscape) {
+  .hero { min-height: auto; padding-bottom: 4rem; }
+  .modal { max-height: 96svh; }
+}
+@media print { .site-header, .compare-bar, .to-top, .preloader, .progress { display: none !important; } .reveal { opacity: 1 !important; transform: none !important; } }

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="title.home">PAKSTAR SARL — Engineered for the Road Ahead</title>
+<meta name="description" content="PAKSTAR SARL: premium motorcycle showroom concept for Djibouti. Bilingual English/French, dark mode, interactive product viewer.">
+<meta name="theme-color" content="#070a10">
+<script>(function(){function g(k){try{var v=localStorage.getItem('pk.'+k);if(v!==null)return JSON.parse(v)}catch(e){}try{if(String(window.name).indexOf('PKS:')===0){var o=JSON.parse(window.name.slice(4));if(k in o)return o[k]}}catch(e){}try{var m=document.cookie.match(new RegExp('(?:^|; )pk_'+k+'=([^;]*)'));if(m)return JSON.parse(decodeURIComponent(m[1]))}catch(e){}return null}try{var t=g('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t);var l=g('lang');if(l){document.documentElement.lang=l}}catch(e){}})();</script>
+<link rel="icon" href="assets/images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/images/brand/icon-192.png"><link rel="apple-touch-icon" href="assets/images/brand/icon-180.png"><meta property="og:image" content="assets/images/brand/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/premium.css">
+<noscript><style>.preloader{display:none}.hero-title .ln>span{transform:none!important}.reveal,.reveal-h{opacity:1!important;transform:none!important;clip-path:none!important}.m-nav{display:none}</style></noscript>
+</head>
+<body data-page="home" class="has-bgvideo">
+<div class="preloader" id="preloader" aria-hidden="true"><div class="pre-in"><img class="pre-logo" src="assets/images/brand/logo-800.png" width="800" height="518" alt=""><div class="pre-bar"><i></i></div><p class="pre-tag">RIDE BEYOND LIMITS</p></div></div>
+<div class="bgvideo" aria-hidden="true"><video muted loop playsinline preload="metadata" data-fixed autoplay poster="assets/video/coast-ride-poster.jpg" data-src="assets/video/coast-ride.mp4"></video></div>
+<header id="siteHeader"></header>
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal-h" style="--d:0;color:#ffb457" data-i18n="hero.eyebrow">PAKSTAR SARL · Djibouti</p>
+      <h1 class="hero-title" id="heroTitle"><span class="ln" style="--d:1"><span data-i18n="hero.t1">Engineered for</span></span><span class="ln" style="--d:2"><span data-i18n="hero.t2">the Road</span></span><span class="ln" style="--d:3"><span data-i18n="hero.t3">Ahead.</span></span></h1>
+      <p class="lead reveal-h" style="--d:4" data-i18n="hero.lead">A digital showroom for motorcycles in Djibouti: commuters, adventure bikes, scooters, electric and commercial three-wheelers, all in one place.</p>
+      <div class="hero-cta reveal-h" style="--d:5"><a class="btn" href="motorcycles.html"><span data-i18n="hero.cta1">Explore Motorcycles</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn light" href="inquiry.html"><span data-i18n="hero.cta2">Request Information</span></a></div>
+      <div class="hero-meta reveal-h" style="--d:6"><div><b data-count="7">0</b><span data-i18n="hero.m1">Categories</span></div><div><b>EN · FR</b><span data-i18n="hero.m2">Languages</span></div><div><b>DJF</b><span data-i18n="hero.m3">Local currency</span></div></div>
+    </div>
+    <div class="hero-stage reveal-h" style="--d:3" id="heroStage">
+      <div class="stage-inner">
+        <div class="stage-ring" aria-hidden="true"></div>
+        <div class="stage-bike" id="heroBike"></div>
+        <span class="chip c1"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><span data-i18n="hero.c1">Performance</span></span>
+        <span class="chip c2"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span data-i18n="hero.c2">Reliability</span></span>
+        <span class="chip c3"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg><span data-i18n="hero.c3">Adventure</span></span>
+      </div>
+      <div class="hero-switch" id="heroSwitch" role="group" aria-label="Preview"></div>
+    </div>
+  </div>
+  <span class="scroll-hint" aria-hidden="true"></span>
+</section>
+
+<div class="marquee" data-render="marquee" aria-hidden="true"></div>
+
+<section class="container" aria-label="Djibouti in numbers">
+  <div class="stats">
+    <div class="stat reveal"><b data-count="6">0</b><span data-i18n="s.regions">Regions of Djibouti</span></div>
+    <div class="stat reveal" style="--i:1"><b data-count="314" data-suffix=" km">0</b><span data-i18n="s.coast">of coastline</span></div>
+    <div class="stat reveal" style="--i:2"><b data-count="23200">0</b><span data-i18n="s.area">km² of land to explore</span></div>
+    <div class="stat reveal" style="--i:3"><b data-count="155" data-prefix="−" data-suffix=" m">0</b><span data-i18n="s.lowest">Lake Assal, lowest point in Africa</span></div>
+  </div>
+</section>
+
+<section class="section" id="about-intro">
+  <div class="container split">
+    <div class="reveal from-left">
+      <span class="eyebrow" data-i18n="intro.eyebrow">About PAKSTAR SARL</span>
+      <h2 data-i18n="intro.title">Motorcycles, matched to Djibouti</h2>
+      <p class="lead" data-i18n="intro.p1">From dense city streets to volcanic plains and salt flats, Djibouti asks a lot from a motorcycle. PAKSTAR SARL is built around finding the right machine for the way people actually ride here.</p>
+      <ul class="checklist">
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="intro.li1">A clear, bilingual catalogue in English and French</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="intro.li2">Honest information: unconfirmed details are always labelled</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="intro.li3">Options for riders, businesses and future dealers</span></li>
+      </ul>
+      <a class="btn" href="about.html"><span data-i18n="btn.about">Discover our approach</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="frame reveal from-right" data-parallax-card><div data-photo="reveal" data-alt="PAKSTAR new model reveal"></div></div>
+  </div>
+</section>
+
+<section class="section alt" id="categories">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="cats.eyebrow">The collection</span><h2 data-i18n="cats.title">Choose your kind of ride</h2><p class="lead" data-i18n="cats.lead">Seven categories designed around Djibouti’s roads, climate and daily life. Open any card for the full picture.</p></div>
+    <div class="grid g3" data-render="cats"></div>
+  </div>
+</section>
+
+<section class="section" id="featured">
+  <div class="container">
+    <div class="sec-head split reveal"><div><span class="eyebrow" data-i18n="feat.eyebrow">Featured models</span><h2 data-i18n="feat.title">Meet the sample line-up</h2><p class="lead" data-i18n="feat.lead">Illustrative models that show how the final catalogue will look. Use Quick view on any card.</p></div><a class="btn ghost" href="motorcycles.html"><span data-i18n="feat.all">Full catalogue</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="grid g3" data-render="featured"></div>
+  </div>
+</section>
+
+<section class="section alt" id="why">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="why.eyebrow">Why PAKSTAR</span><h2 data-i18n="why.title">Built around the rider</h2><p class="lead" data-i18n="why.lead">What we are working towards: practical commitments, shown honestly as goals until each one is confirmed.</p></div>
+    <div class="grid g3" data-render="features"></div>
+  </div>
+</section>
+
+<section class="section dark" id="map">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="map.eyebrow">Find us in Djibouti</span><h2 data-i18n="map.title">Djibouti on the map</h2><p class="lead" data-i18n="map.lead">Explore the main areas we are focused on. Tap a pin or a place in the list to learn more about riding there.</p></div>
+    <div class="map-shell reveal">
+      <div class="map-box" data-render="map"></div>
+      <div class="poi-list" data-render="poi" aria-label="Places"></div>
+    </div>
+    <p class="notice" style="margin-top:1.4rem;background:rgba(255,255,255,.04)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-i18n="map.note">The pin on Djibouti City is indicative. The official showroom address will be added once confirmed. The stylised map is illustrative and not for navigation; use the Live map tab for real roads.</span></p>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="gal.eyebrow">Gallery</span><h2 data-i18n="gal.title">Studio, desert and city lights</h2><p class="lead" data-i18n="gal.lead">A first look at the visual language. Click any image to open the viewer; use arrow keys or swipe to browse.</p></div>
+    <div class="gallery" data-render="gallery"></div>
+  </div>
+</section>
+
+<section class="section alt" id="process">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="steps.eyebrow">How it works</span><h2 data-i18n="steps.title">From first look to first ride</h2><p class="lead" data-i18n="steps.lead">A simple, proposed four-step journey. Details will be confirmed with the company.</p></div>
+    <div class="steps" data-render="steps"></div>
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="tips.eyebrow">Ride smart</span><h2 data-i18n="tips.title">Five tips for riding in the heat</h2><p class="lead" data-i18n="tips.lead">Djibouti is one of the hottest countries on Earth. A few habits make every ride safer and more comfortable.</p></div>
+    <div class="tip-grid" data-render="tips"></div>
+  </div>
+</section>
+
+<section class="section alt" id="news">
+  <div class="container">
+    <div class="sec-head split reveal"><div><span class="eyebrow" data-i18n="news.eyebrow">News & updates</span><h2 data-i18n="news.title">Latest from the showroom</h2><p class="lead" data-i18n="news.lead">Demonstration articles showing the editorial layout. They are not real company announcements.</p></div><a class="btn ghost" href="news.html"><span data-i18n="news.all">All news</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="grid g3" data-render="news" data-limit="3"></div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container split" style="align-items:start">
+    <div class="reveal from-left"><div class="sec-head reveal"><span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span><h2 data-i18n="faq.title">Questions, answered</h2><p class="lead" data-i18n="faq.lead">Short answers about this demonstration site and how inquiries work.</p></div><a class="btn ghost" href="contact.html"><span data-i18n="btn.ask">Ask us something else</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="acc" data-render="faq"></div>
+  </div>
+</section>
+
+<section class="section"><div class="container"><div class="cta-band reveal zoom">
+  <div class="art" aria-hidden="true"><div data-photo="adventure"></div></div>
+  <span class="eyebrow" style="color:#ffb457" data-i18n="cta.eyebrow">Let’s talk</span>
+  <h2 data-i18n="cta.title">Ready to find your ride?</h2>
+  <p data-i18n="cta.lead">Tell us what you need and we will come back with verified availability and a clear quote in Djiboutian Franc.</p>
+  <div class="btn-row" style="margin-top:1.6rem"><a class="btn" href="inquiry.html"><span data-i18n="btn.inquire">Request information</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn light" href="become-a-dealer.html"><span data-i18n="btn.dealer">Become a dealer</span></a></div>
+</div></div></section>
+
+</main>
+<footer id="siteFooter"></footer>
+<script src="js/storage.js"></script>
+<script src="js/art.js"></script>
+<script src="js/content.js"></script>
+<script src="js/media.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>
